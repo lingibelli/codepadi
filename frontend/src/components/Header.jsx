@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import "./Header.css"; 
 import { Link } from "react-router-dom";
 
-function Header() {
+function Header({language, onLanguageChange }) {
   const [darkMode, setDarkMode] = useState(false);
-  const [language, setLanguage] = useState("ENGLISH");
 
   const toggleDarkMode = () => setDarkMode(!darkMode);
-  const toggleLanguage = () => setLanguage(language === "ENGLISH" ? "தமிழ்" : "ENGLISH");
+  const toggleLanguage = () => onLanguageChange(language === "ENGLISH" ? "தமிழ்" : "ENGLISH");
   const languageButtonText = language === "ENGLISH" ? "தமிழ்" : "ENGLISH";
 
   return (

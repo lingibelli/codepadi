@@ -7,11 +7,12 @@ import Footer from "./components/Footer";
 import HomePage from "./pages/homePage/homePage";
 
 function App() {
+  const [language, setLanguage] = useState("ENGLISH");
   return (
     <Router>
-      <Header />
+      <Header language={language} onLanguageChange={setLanguage}/>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage language={language} />} />
       </Routes>
       <Footer />
     </Router>
