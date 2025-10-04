@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import "./Header.css"; 
 import { Link } from "react-router-dom";
 
@@ -9,6 +9,11 @@ function Header({language, onLanguageChange }) {
   const toggleLanguage = () => onLanguageChange(language === "ENGLISH" ? "தமிழ்" : "ENGLISH");
   const languageButtonText = language === "ENGLISH" ? "தமிழ்" : "ENGLISH";
 
+  useEffect(() => {
+  document.body.classList.toggle("dark", darkMode);
+}, [darkMode]);
+
+
   return (
     <header className={darkMode ? "header dark" : "header"}>
       <div className="logo-section">
@@ -18,8 +23,8 @@ function Header({language, onLanguageChange }) {
 
       <nav className="menu">
         <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/schools">Schools</Link>
+        <Link to="/videos">Video</Link>
       </nav>
 
       <div className="actions">

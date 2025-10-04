@@ -52,8 +52,8 @@ function HomePage({language}) {
       </ul>
 
       <h2 className="heading2">Software Used</h2>
-       <p>
-        <ul class="software">
+       
+        <ul className="software">
           <li>
               <a href="https://scratch.mit.edu/" target="_blank" rel="noopener noreferrer">Scratch - Imagine, Program, Share (mit.edu) </a>
               </li>
@@ -65,7 +65,7 @@ function HomePage({language}) {
               </li>
         </ul>
 
-      </p>
+      
     </div>
   );
 
@@ -118,8 +118,7 @@ function HomePage({language}) {
       </ul>
 
       <h2 className="heading2">மென்பொருள்</h2>
-      <p>
-        <ul class="software">
+        <ul className="software">
           <li>
               <a href="https://scratch.mit.edu/" target="_blank" rel="noopener noreferrer">Scratch - Imagine, Program, Share (mit.edu) </a>
               <br /></li>
@@ -131,7 +130,7 @@ function HomePage({language}) {
               <br /></li>
         </ul>
 
-      </p>
+      
     </div>
   );
 

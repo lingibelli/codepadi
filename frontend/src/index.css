@@ -1,0 +1,23 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --link-color: #007bff;
+  --font-family: "Arial", sans-serif;
+}
+
+/* Dark theme overrides */
+body.dark {
+  --bg-color: #0c0c0bb3;
+  --text-color: rgb(241, 233, 233);
+  --link-color: #66b2ff;
+}
