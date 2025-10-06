@@ -4,7 +4,7 @@
   padding: 20px;
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  color: #333;
+  color: var(--text-color);
 }
 
 .heading1 {
@@ -29,4 +29,9 @@
 .link {
   color: #0066cc;
   text-decoration: underline;
+}
+
+.software li {
+    padding: 5px 0;
+
 }
